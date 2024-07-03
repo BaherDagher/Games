@@ -1,0 +1,158 @@
+.first-section{
+    /* background-image:  linear-gradient(rgba(49, 53, 58,0.5),rgba(49, 53, 58,0.5)), url(../images/wraper.png) ; */
+    background-size: cover;
+    background-position: center ;
+    height: 35vh;
+    background-color:#31353A;
+    background-image:  url(../images/wraper.png) ;
+
+}
+
+#gamesSection{
+    background-color: #272B30;
+    color: white;
+}
+
+#gamesLoader {
+    background-color: #27282A;
+    z-index: 9999;
+    display: flex;
+
+}
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+.navbar {
+z-index: 1050;
+top: 0px ;
+margin: -38px;
+border-radius: 1.25rem;
+
+    --bs-navbar-brand-padding-y: 0;
+
+    --bs-navbar-active-color:blue;
+    .logo {
+        width: 4rem;
+    }
+
+
+    .navbar-nav{
+    --bs-nav-link-color: white;
+    --bs-nav-link-hover-color: blue;
+    --bs-nav-link-disabled-color:blue;
+
+    }
+
+}
+
+.bg-info ,.text-bg-info {
+  background-color: #3A497B !important; 
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+.card {
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.05);
+
+    .custom-hover{
+        background-color: rgb(22, 87, 252) !important; 
+    
+    }
+}
+
+.card img {
+    filter: grayscale(80%);
+    transition: filter 0.5s ease;
+    &:hover {
+        filter: grayscale(0%);
+    }
+}
+
+
+
+.max-three-lines {
+    line-height: 1.5em; /* Adjust this value according to your desired line height */
+    min-height: 4.5em; /* 3 lines * 1.5em line-height */
+    max-height: 4.5em; /* 3 lines * 1.5em line-height */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    font-size: 0.9rem;
+}
+
+
+.row .font-size {
+    font-size: 0.9rem;
+    font-weight: bold;
+ 
+}
+
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 8rem;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    color:#C9C9C9;
+}
+
+.close-btn:hover {
+    color: red; /* Change color on hover for better UX */
+}
+
+
+#detailsSection {
+    height: 100vh;
+    background-color: #27282A;
+    color: white;
+}
+
+.color{
+    &:hover {
+        background-color: yellow !important;
+    }
+}
